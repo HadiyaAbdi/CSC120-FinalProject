@@ -1,17 +1,27 @@
 import java.util.*;
-
+/**
+ * The main class to start the game.
+ * It initializes the game, creates rooms, and handles user input.
+ */
 public class MysteryGame {
     private Scanner s = new Scanner(System.in);
     private Player player = new Player();
     private List<Room> rooms = new ArrayList<>();
     private boolean basementUnlocked = false;
     
-    // The main method to start the game
+    /**
+     * Entry point of the game.
+     * It creates an instance of the game and starts it.
+     * @param args
+     */
     public static void main(String[] args) {
         MysteryGame G = new MysteryGame();
         G.start();
     }   
-    // Constructor
+    /**
+     * Starts the game. Displays introduction, initializes rooms, and handles user input.
+     * and manages the game flow/ the game loop. aswell manages the riddle solving.
+     */
         public void start() {
             System.out.println("Welcome to The Unlucky Curious Three! 😶‍🌫️");
             System.out.println("You have been chosen as one of the participants to play the Unlucky Curious Three.");
@@ -63,7 +73,7 @@ public class MysteryGame {
                     System.out.println("Your answer: ");
                     String finalRiddle = s.nextLine().toLowerCase();
 
-                    //System.out.println("The basement is now unlocked.");
+                    // Check the answer to the final riddle
                     System.out.println("Now enter the year from your first clue:");
                     String riddle_1 = s.nextLine();
                     if(!riddle_1.equals("1878")){
@@ -110,7 +120,7 @@ public class MysteryGame {
             } else if (input.equals("4")) {
                 player.showClue();
             } else if (input.equals("5")) {
-                System.out.println("Thanks for playing! And the Legend of the Basement stays mystery...!");
+                System.out.println("Thanks for playing! And the Legend of the Basement maintains!");
                 return;
             } else {
                 System.out.println("Invalid option. Please choose 1–5.");
@@ -119,4 +129,4 @@ public class MysteryGame {
             }
         }
     
-// integer input 
+

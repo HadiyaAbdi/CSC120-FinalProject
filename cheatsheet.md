@@ -1,6 +1,7 @@
 This file will contain documentation for all commands available in your game.
 
 Note:  It's a good idea to also make this list available inside the game, in response to a `HELP` command.
+**Answers down below**
 1 – Explore First Floor
 Solve 2 riddles to collect 2 clues.
 
@@ -16,6 +17,7 @@ View all collected clues.
 5 – Exit Game
 Ends the game.
 
+**List of methods & their functions**
 collectClue(clue) – shows that the clues have been collected.
 
 showClue() – Displays collected clues. (Rarely used)
@@ -30,12 +32,13 @@ addItem(item) – Adds an item to unluck the basement.
 
 hasBasementKey() – Checks if player has the Basement Key after solved the final riddle.
 
-showInventory() – shows inventory items. 
+showInventory() – shows inventory items.
 
 # SPOILER ALERT
 
 If your game includes challenges that must be overcome to win, also list them below.
 
+**challenges of my game**
 FirFloor: 
 riddle_1: answer to the riddle is an integer. if you get it wrong two times you get a hint.  
 riddle_2: answer to the riddle is a word. if you get it wrong two times you get a hint. if you get it wrong three times you loose all the clues of that floor.
